@@ -1,0 +1,142 @@
+// Start of Heading
+
+@mixin menu-list-hover() {
+    color: #dcf10D;
+    text-decoration-line: underline;
+    font-weight: 500;
+    font-size: 18px;
+    transition: 400ms;
+}
+
+@mixin buttons() {
+    color: #9D9DB5;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #192140;
+}
+
+@mixin button-hover() {
+    color:#0266FF;
+    border: 1px solid #0266FF;
+    border-radius: 25px;
+    padding: 15px;
+    font-size: 18px;
+    transition: 400ms;
+}
+
+// End of Heading
+
+// Start of Main Content
+
+
+//End of Main Content
+
+// Start of Footer
+
+@mixin footer-header() {
+    padding-bottom: 25px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+@mixin footer-list() {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    gap: 15px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+@mixin footer-hover() {
+    font-size: 15px;
+    transition: 400ms;
+}
+
+// For Mobile
+@mixin refocus-logo-mobile() {
+    padding-left: 10px;
+    width: 90px;
+    height: 35px;
+    padding-top: 20px;
+}
+
+@mixin card-mobile(){
+    margin: 0px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin footer-mobile(){
+    margin: 0px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin footer-hover-mobile() {
+    font-size: 12px;
+    transition: 400ms;
+}
+
+@mixin blog-mobile() {
+    margin: 0px;
+    position: relative; 
+    padding-left: 10px;
+    padding-top: 15px;
+}
+
+@mixin blog-header-mobile() {
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+@mixin blog-list-mobile() {
+    width: 280px;
+    gap: 10px;
+    font-size: 10px;
+    font-weight: 300;
+}
+
+@mixin courses-mobile() {
+    padding-top: 30px;
+    padding-left: 10px;
+    margin-left: 0px;
+}
+
+@mixin courses-header-mobile() {
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+@mixin courses-list-mobile() {
+    gap: 10px;
+    font-size: 10px;
+    font-weight: 300;
+    padding-top: 2px;
+}
+
+@mixin follow-us-mobile() {
+    padding-top: 0px;
+    padding-left: 10px;
+    margin-top: 30px;
+    margin-left: 0px;
+}
+
+@mixin follow-header-mobile() {
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+@mixin trademark-mobile() {
+    gap: 5px;
+    font-size: 8px;
+    font-weight: 200;
+    margin-top: 25px;
+    margin-left: 10px;
+}

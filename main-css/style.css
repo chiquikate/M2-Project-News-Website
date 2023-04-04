@@ -1,0 +1,791 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.heading {
+  background-color: #192140;
+  height: 84px;
+  width: 1440px;
+  display: grid;
+  grid-template-columns: 20%, 60%, 20%;
+}
+
+.refocus-logo {
+  grid-column: 1/2;
+  width: 120px;
+  height: 50px;
+  padding-top: 13px;
+  padding-left: 80px;
+}
+
+.toggle-btn {
+  border: 2px solid white;
+  width: 15px;
+  height: 10px;
+  border-radius: 100%;
+  padding: 10px;
+  display: none;
+}
+
+.toggle-btn span {
+  display: none;
+  width: 15px;
+  height: 2px;
+  background-color: white;
+  margin-bottom: 5px;
+}
+
+#menu-list {
+  grid-column: 2/3;
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 50px;
+  margin-left: 200px;
+  margin-top: -70px;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Inter", sans-serif;
+  position: relative;
+}
+
+#blog:hover {
+  color: #dcf10D;
+  text-decoration-line: underline;
+  font-weight: 500;
+  font-size: 18px;
+  transition: 400ms;
+}
+
+#our-courses:hover {
+  color: #dcf10D;
+  text-decoration-line: underline;
+  font-weight: 500;
+  font-size: 18px;
+  transition: 400ms;
+}
+
+#webinars:hover {
+  color: #dcf10D;
+  text-decoration-line: underline;
+  font-weight: 500;
+  font-size: 18px;
+  transition: 400ms;
+}
+
+#reviews:hover {
+  color: #dcf10D;
+  text-decoration-line: underline;
+  font-weight: 500;
+  font-size: 18px;
+  transition: 400ms;
+}
+
+.account-input {
+  grid-column: 3/4;
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -70px;
+  gap: 60px;
+  font-family: "Inter", sans-serif;
+}
+
+#signup-btn {
+  color: #9D9DB5;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #192140;
+}
+
+#login-btn {
+  color: #9D9DB5;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #192140;
+}
+
+#signup-btn:hover {
+  color: #0266FF;
+  border: 1px solid #0266FF;
+  border-radius: 25px;
+  padding: 15px;
+  font-size: 18px;
+  transition: 400ms;
+}
+
+#login-btn:hover {
+  color: #0266FF;
+  border: 1px solid #0266FF;
+  border-radius: 25px;
+  padding: 15px;
+  font-size: 18px;
+  transition: 400ms;
+}
+
+.card {
+  width: 1440px;
+  display: grid;
+  grid-template-columns: 33%, 33%, 34%;
+  grid-template-rows: 33%, 33%, 34%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  gap: 20px;
+}
+
+.news-card {
+  height: 350px;
+  width: 320px;
+  margin-left: 50px;
+}
+
+.news-img {
+  height: 180px;
+  width: 320px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.delete {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  margin-left: 93%;
+  margin-top: -20px;
+  display: none;
+}
+
+.news-card:hover .delete {
+  display: block;
+  transition: 300ms;
+}
+
+.read-mark {
+  width: 10px;
+  height: 10px;
+  position: relative;
+  left: 30px;
+  right: 0px;
+  top: 0px;
+}
+
+.check-mark {
+  width: 15px;
+  height: 15px;
+  display: none;
+}
+
+.news-title {
+  position: relative;
+  width: 280px;
+  left: 30px;
+  right: 30px;
+  top: 15px;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  color: black;
+}
+
+.foot-note {
+  display: flex;
+  border-top: 1px solid #9D9DB5;
+  position: relative;
+  width: 280px;
+  top: 30px;
+  left: 30px;
+  right: 30px;
+}
+
+.date-published {
+  position: relative;
+  top: 10px;
+  left: 0px;
+  height: 18px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15.6px;
+  color: #9D9DB5;
+  text-align: left;
+  font-family: "Roboto";
+}
+
+.heart-btn {
+  height: 13px;
+  width: 13px;
+  position: relative;
+  top: 10px;
+  left: 140px;
+  color: #9D9DB5;
+  cursor: pointer;
+}
+
+.red-heart {
+  height: 16px;
+  width: 16px;
+  position: relative;
+  top: 8px;
+  left: 125px;
+  display: none;
+}
+
+.like-counter {
+  position: relative;
+  top: 10px;
+  left: 150px;
+  color: #9D9DB5;
+  font-size: 12px;
+  font-family: "Roboto";
+}
+
+#news1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+#news2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+#news3 {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+#news4 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+#news5 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+#news6 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+#news7 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+#news8 {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+#news9 {
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+
+.footer {
+  height: 274px;
+  width: 1440px;
+  display: grid;
+  grid-template-columns: 70%, 30%;
+  grid-template-rows: 50%, 50%;
+  background-color: #10131C;
+  color: white;
+}
+
+.blog {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin-top: 50px;
+  margin-left: 5%;
+}
+
+.blog-header {
+  padding-bottom: 25px;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+}
+
+.blog-list {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  display: flex;
+  gap: 15px;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Roboto";
+}
+
+#data-analyst:hover {
+  font-size: 15px;
+  transition: 400ms;
+}
+
+#web-developer:hover {
+  font-size: 15px;
+  transition: 400ms;
+}
+
+#career:hover {
+  font-size: 15px;
+  transition: 400ms;
+}
+
+#success-stories:hover {
+  font-size: 15px;
+  transition: 400ms;
+}
+
+#resume:hover {
+  font-size: 15px;
+  transition: 400ms;
+}
+
+#hard-skills:hover {
+  font-size: 15px;
+  transition: 400ms;
+}
+
+#soft-skills:hover {
+  font-size: 15px;
+  transition: 400ms;
+}
+
+.courses {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  margin-left: 5%;
+}
+
+.courses-header {
+  padding-bottom: 25px;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+}
+
+.courses-list {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  display: flex;
+  gap: 15px;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Roboto";
+}
+
+#data-analytics:hover {
+  font-size: 15px;
+  transition: 400ms;
+}
+
+#web-development:hover {
+  font-size: 15px;
+  transition: 400ms;
+}
+
+.follow-us {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-top: 50px;
+}
+
+.follow-header {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  display: flex;
+  gap: 15px;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Roboto";
+}
+
+.social-media {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.follow-img {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 100px;
+}
+
+.trademark {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  margin-top: 40px;
+  display: flex;
+  gap: 10px;
+  color: #9D9DB5;
+  font-family: "Roboto";
+  opacity: 40%;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 375px) {
+  .new-website {
+    width: 375px;
+  }
+  .refocus-logo {
+    padding-left: 10px;
+    width: 90px;
+    height: 35px;
+    padding-top: 20px;
+  }
+  .heading {
+    width: 375px;
+  }
+  .menu-mobile {
+    position: absolute;
+    left: 300px;
+    bottom: 35px;
+    width: 50px;
+    height: 50px;
+    top: 25px;
+  }
+  .toggle-btn {
+    display: block;
+  }
+  .toggle-btn span {
+    display: block;
+  }
+  #menu-list {
+    display: none;
+    width: 375px;
+  }
+  #menu-list.show {
+    display: block;
+    padding: 15px 0px;
+    border-top: 2px solid #dcf10D;
+    background-color: #192140;
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+    margin-left: -100px;
+    margin-top: 80px;
+  }
+  .account-input {
+    display: none;
+  }
+  .card {
+    margin: 0px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+  }
+  .news-card {
+    margin-left: 30px;
+  }
+  .news-img {
+    width: 310px;
+  }
+  .news-title {
+    width: 250px;
+  }
+  .foot-note {
+    width: 260px;
+  }
+  .heart-btn {
+    left: 110px;
+  }
+  .red-heart {
+    height: 16px;
+    width: 16px;
+    position: relative;
+    top: 8px;
+    left: 96px;
+    display: none;
+  }
+  .like-counter {
+    left: 120px;
+  }
+  .footer {
+    width: 375px;
+    margin: 0px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .blog {
+    margin: 0px;
+    position: relative;
+    padding-left: 10px;
+    padding-top: 15px;
+  }
+  .blog-header {
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .blog-list {
+    width: 280px;
+    gap: 10px;
+    font-size: 10px;
+    font-weight: 300;
+  }
+  .courses {
+    padding-top: 30px;
+    padding-left: 10px;
+    margin-left: 0px;
+  }
+  .courses-header {
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .courses-list {
+    gap: 10px;
+    font-size: 10px;
+    font-weight: 300;
+    padding-top: 2px;
+  }
+  .follow-us {
+    padding-top: 0px;
+    padding-left: 10px;
+    margin-top: 30px;
+    margin-left: 0px;
+  }
+  .social-media {
+    margin-top: 0px;
+  }
+  .follow-img {
+    width: 20px;
+    height: 20px;
+  }
+  .trademark {
+    gap: 5px;
+    font-size: 8px;
+    font-weight: 200;
+    margin-top: 25px;
+    margin-left: 10px;
+  }
+  #data-analyst:hover {
+    font-size: 12px;
+    transition: 400ms;
+  }
+  #web-developer:hover {
+    font-size: 12px;
+    transition: 400ms;
+  }
+  #career:hover {
+    font-size: 12px;
+    transition: 400ms;
+  }
+  #success-stories:hover {
+    font-size: 12px;
+    transition: 400ms;
+  }
+  #resume:hover {
+    font-size: 12px;
+    transition: 400ms;
+  }
+  #hard-skills:hover {
+    font-size: 12px;
+    transition: 400ms;
+  }
+  #soft-skills:hover {
+    font-size: 12px;
+    transition: 400ms;
+  }
+  #data-analytics:hover {
+    font-size: 12px;
+    transition: 400ms;
+  }
+  #web-development:hover {
+    font-size: 12px;
+    transition: 400ms;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .new-website {
+    width: 320px;
+  }
+  .refocus-logo {
+    padding-left: 10px;
+    width: 90px;
+    height: 35px;
+    padding-top: 20px;
+  }
+  .heading {
+    width: 320px;
+  }
+  .menu-mobile {
+    position: absolute;
+    left: 250px;
+    bottom: 35px;
+    width: 50px;
+    height: 50px;
+    top: 25px;
+  }
+  .toggle-btn {
+    display: block;
+  }
+  .toggle-btn span {
+    display: block;
+  }
+  #menu-list {
+    display: none;
+  }
+  #menu-list.show {
+    display: block;
+    padding: 15px 0px;
+    border-top: 2px solid #dcf10D;
+    background-color: #192140;
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+    margin-left: -100px;
+    margin-top: 80px;
+    width: 320px;
+  }
+  .account-input {
+    display: none;
+  }
+  .card {
+    margin: 0px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    margin: 0px;
+  }
+  .news-card {
+    margin-left: 0px;
+  }
+  .news-img {
+    width: 310px;
+    padding-left: 4px;
+  }
+  .news-title {
+    width: 250px;
+  }
+  .foot-note {
+    width: 250px;
+  }
+  .heart-btn {
+    left: 110px;
+  }
+  .red-heart {
+    height: 16px;
+    width: 16px;
+    position: relative;
+    top: 9px;
+    left: 95px;
+    display: none;
+  }
+  .like-counter {
+    left: 120px;
+  }
+  .footer {
+    width: 320px;
+    margin: 0px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .blog {
+    margin: 0px;
+    position: relative;
+    padding-left: 10px;
+    padding-top: 15px;
+  }
+  .blog-header {
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .blog-list {
+    width: 280px;
+    gap: 10px;
+    font-size: 10px;
+    font-weight: 300;
+  }
+  .courses {
+    padding-top: 30px;
+    padding-left: 10px;
+    margin-left: 0px;
+  }
+  .courses-header {
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .courses-list {
+    gap: 10px;
+    font-size: 10px;
+    font-weight: 300;
+    padding-top: 2px;
+  }
+  .follow-us {
+    padding-top: 0px;
+    padding-left: 10px;
+    margin-top: 30px;
+    margin-left: 0px;
+  }
+  .follow-header {
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .social-media {
+    margin-top: 0px;
+  }
+  .follow-img {
+    width: 20px;
+    height: 20px;
+  }
+  .trademark {
+    gap: 5px;
+    font-size: 8px;
+    font-weight: 200;
+    margin-top: 25px;
+    margin-left: 10px;
+  }
+  #data-analyst:hover {
+    font-size: 12px;
+    transition: 400ms;
+  }
+  #web-developer:hover {
+    font-size: 12px;
+    transition: 400ms;
+  }
+  #career:hover {
+    font-size: 12px;
+    transition: 400ms;
+  }
+  #success-stories:hover {
+    font-size: 12px;
+    transition: 400ms;
+  }
+  #resume:hover {
+    font-size: 12px;
+    transition: 400ms;
+  }
+  #hard-skills:hover {
+    font-size: 12px;
+    transition: 400ms;
+  }
+  #soft-skills:hover {
+    font-size: 12px;
+    transition: 400ms;
+  }
+  #data-analytics:hover {
+    font-size: 12px;
+    transition: 400ms;
+  }
+  #web-development:hover {
+    font-size: 12px;
+    transition: 400ms;
+  }
+}/*# sourceMappingURL=style.css.map */

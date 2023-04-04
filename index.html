@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main-css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>News Website</title>
+</head>
+
+<body>
+<!-- Start of Menu Bar-->
+    <div class="news-website">
+        <heading class="heading">
+            <div>
+                <a href="https://refocus.me/ph/" target="_blank" title="Refocus"><img src="refocus-logo.png" class="refocus-logo"></a>
+            </div>
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="toggle-btn" onclick="menuMobile()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>   
+            </div>
+            <div id="menu-list">    
+                <p id="blog">Blog</p>
+                <p id="our-courses">Our Courses</p>
+                <p id="webinars">Free Webinars</p>
+                <p id="reviews">Reviews</p>
+            </div>
+            <div class="account-input">
+                <button type="button" id="signup-btn">SIGN UP</p>
+                <button type="button" id="login-btn">LOG IN</p>
+            </div>
+            
+        </heading>
+    <!-- End of Menu Bar -->
+
+
+    <!-- Start of Cards Section -->
+        <main>
+            <div class="card">
+                <div class="news-card" id="news1">
+                    <img src="delete.png" class="delete" id="d1" onclick="remove1()">
+                    <img src="full-stack-dev.png" class="news-img">
+                    <div class="read-mark">
+                        <img src="check-mark.png" class="check-mark" id="check1">
+                    </div>
+                    <a style="text-decoration:none"><h4 class="news-title" onclick="read1(0)">What is a Full Stack Developer?</h4></a>
+                    <div class="foot-note">
+                        <p class="date-published">March 3, 2023</p>
+                        <img src="heart-btn.png" class="heart-btn" onclick="enable1(0)">
+                        <img src="redheart.png" class="red-heart" id="rh1" onclick="enable1(1)">
+                        <p class="like-counter" id="like-counter"></p>
+                    </div>
+                </div>
+                <div class="news-card" id="news2">
+                    <img src="delete.png" class="delete" id="d2" onclick="remove2()">
+                    <img src="news1.png" class="news-img">
+                    <div class="read-mark">
+                        <img src="check-mark.png" class="check-mark" id="check2">
+                    </div>
+                    <a style="text-decoration:none"><h4 class="news-title" onclick="read2(0)">Front-End vs. Back-end Developer: What's the Difference?</h4></a>
+                    <div class="foot-note">
+                        <p class="date-published">February 20, 2023</p>
+                        <img src="heart-btn.png" class="heart-btn" onclick="enable2(0)">
+                        <img src="redheart.png" class="red-heart" id="rh2" onclick="enable2(1)">
+                        <p class="like-counter" id="like-counter"></p>
+                    </div>
+                </div>
+                <div class="news-card" id="news3">
+                    <img src="delete.png" class="delete" id="d3" onclick="remove3()">
+                    <img src="soft-skills.jpeg" class="news-img">
+                    <div class="read-mark">
+                        <img src="check-mark.png" class="check-mark" id="check3">
+                    </div>
+                   <a style="text-decoration:none"><h4 class="news-title" onclick="read3(0)">What are the Soft Skills and How Do They Benefit Your Career?</h4></a>
+                    <div class="foot-note">
+                        <p class="date-published">January 30, 2023</p>
+                        <img src="heart-btn.png" class="heart-btn" onclick="enable3(0)">
+                        <img src="redheart.png" class="red-heart" id="rh3" onclick="enable3(1)">
+                        <p class="like-counter" id="like-counter"></p>
+                    </div>
+                </div>
+                <div class="news-card" id="news4">
+                    <img src="delete.png" class="delete" id="d4" onclick="remove4()">
+                    <img src="tech-jobs.jpg" class="news-img">
+                    <div class="read-mark">
+                        <img src="check-mark.png" class="check-mark" id="check4">
+                    </div>
+                    <a style="text-decoration:none"><h4 class="news-title" onclick="read4(0)">IT Jobs: In-Demand, Available to Everyone, Ripe With Opportunity</h4></a>
+                    <div class="foot-note">
+                        <p class="date-published">December 26, 2022</p>
+                        <img src="heart-btn.png" class="heart-btn" onclick="enable4(0)">
+                        <img src="redheart.png" class="red-heart" id="rh4" onclick="enable4(1)">
+                        <p class="like-counter" id="-like-counter"></p>
+                    </div>    
+                </div>
+                <div class="news-card" id="news5">
+                    <img src="delete.png" class="delete" id="d5" onclick="remove5()">
+                    <img src="data-science.jpeg" class="news-img">
+                    <div class="read-mark">
+                        <img src="check-mark.png" class="check-mark" id="check5">
+                    </div>
+                    <a style="text-decoration:none"><h4 class="news-title" onclick="read5(0)">7 Learning Tips for Data Science Self Study</h4></a>
+                    <div class="foot-note">
+                        <p class="date-published">November 18, 2022</p>
+                        <img src="heart-btn.png" class="heart-btn" onclick="enable5(0)">
+                        <img src="redheart.png" class="red-heart" id="rh5" onclick="enable5(1)">
+                        <p class="like-counter" id="-like-counter"></p>
+                    </div>
+                </div>
+                <div class="news-card" id="news6">
+                    <img src="delete.png" class="delete" id="d6" onclick="remove6()">
+                    <img src="hard-soft-skills.png" class="news-img">
+                    <div class="read-mark">
+                        <img src="check-mark.png" class="check-mark" id="check6">
+                    </div>
+                    <a style="text-decoration:none"><h4 class="news-title" onclick="read6(0)">Hard Skills vs. Soft Skills: <br/>
+                        Do You Really Need Both? Why?</h4></a>
+                    <div class="foot-note">
+                        <p class="date-published">October 23, 2022</p>
+                        <img src="heart-btn.png" class="heart-btn" onclick="enable6(0)">
+                        <img src="redheart.png" class="red-heart" id="rh6" onclick="enable6(1)">
+                        <p class="like-counter" id="-like-counter"></p>
+                    </div>
+                </div>
+                <div class="news-card" id="news7">
+                    <img src="delete.png" class="delete" id="d7" onclick="remove7()">
+                    <img src="what-is-js.png" class="news-img">
+                    <div class="read-mark">
+                        <img src="check-mark.png" class="check-mark" id="check7">
+                    </div>
+                    <a style="text-decoration:none"><h4 class="news-title" onclick="read7(0)">What is JavaScript?</h4></a>
+                    <div class="foot-note"> 
+                        <p class="date-published">August 16, 2022</p>
+                        <img src="heart-btn.png" class="heart-btn" onclick="enable7(0)">
+                        <img src="redheart.png" class="red-heart" id="rh7" onclick="enable7(1)">
+                        <p class="like-counter" id="-like-counter"></p>
+                    </div>
+                </div>
+                <div class="news-card" id="news8">
+                    <img src="delete.png" class="delete" id="d8" onclick="remove8()">
+                    <img src="business-analyst.png" class="news-img">
+                    <div class="read-mark">
+                        <img src="check-mark.png" class="check-mark" id="check8">
+                    </div>
+                    <a style="text-decoration:none"><h4 class="news-title" onclick="read8(0)">Who is a Business Analyst: Roles, Skills, Salaries, Job Prospects</h4></a>
+                    <div class="foot-note">
+                        <p class="date-published">August 1, 2022</p>
+                        <img src="heart-btn.png" class="heart-btn" onclick="enable8(0)">
+                        <img src="redheart.png" class="red-heart" id="rh8" onclick="enable8(1)">
+                        <p class="like-counter" id="-like-counter"></p>
+                    </div>
+                </div>
+                <div class="news-card" id="news9">
+                    <img src="delete.png" class="delete" id="d9" onclick="remove9()">
+                    <img src="data-analyst.png" class="news-img">
+                    <div class="read-mark">
+                        <img src="check-mark.png" class="check-mark" id="check9">
+                    </div>
+                    <a style="text-decoration:none"><h4 class="news-title" onclick="read9(0)">How Much Do Data Analysts Make? 2023 Salary Guide</h4></a>
+                    <div class="foot-note">
+                        <p class="date-published">April 16, 2022</p>
+                        <img src="heart-btn.png" class="heart-btn" onclick="enable9(0)">
+                        <img src="redheart.png" class="red-heart" id="rh9" onclick="enable9(1)">
+                        <p class="like-counter" id="-like-counter"></p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    <!-- End of Card Section -->
+
+
+    <!-- Start of Footer -->
+        <footer class="footer">
+            <div class="blog">
+                <div class="blog-header">BLOG</div>
+                <div class="blog-list">
+                    <p id="data-analyst">Data Analyst</p>
+                    <p id="web-developer">Web Developer</p>
+                    <p id="career">Career</p>
+                    <p id="success-stories">Success Stories</p>
+                    <p id="resume">Resume</p>
+                    <p id="hard-skills">Hard Skills</p>
+                    <p id="soft-skills">Soft Skills</p>
+                </div>
+            </div>
+            <div class="courses">
+                <div class="courses-header">OUR COURSES</div>
+                <div class="courses-list">
+                    <p id="data-analytics">Data Analytics</p>
+                    <p id="web-development">Web Development</p>
+                </div>
+            </div>
+            <div class="follow-us">
+                <div class="follow-header">FOLLOW US</div>
+                <div class="social-media"> 
+                    <a href="https://www.linkedin.com/company/refocusme/" target="_blank" title="LinkedIn"><img src="linked-in.png" class="follow-img"></a>
+                    <a href="https://instagram.com/refocus.education.id?igshid=YmMyMTA2M2Y=" target="_blank" title="Instagram"><img src="instagram.svg" class="follow-img"></a>
+                    <a href="https://www.facebook.com/refocus.web.developer" target="_blank" title="Facebook"><img src="facebook.png" class="follow-img"></a>
+                    <a href="" target="_blank" title="Twitter"><img src="twitter.png" class="follow-img"></a>
+                    <a href="" target="_blank" title="WatsApp"><img src="watsapp.png" class="follow-img"></a>
+                    <a href="https://www.tiktok.com/@refocus.education" target="_blank" title="Tiktok"><img src="tiktok.png" class="follow-img"></a>
+                    <a href="https://www.youtube.com/channel/UC8dDKIblZi2zmazH0nRZY0A" target="_blank" title="Youtube"><img src="youtube.png" class="follow-img"></a>
+                </div>
+            </div>
+
+            <div class="trademark">
+                <p>Refocus Limited 2022</p>
+                <p>Privacy Policy</p>
+                <p>Terms of Use</p>
+            </div>
+        </footer>
+    </div>
+
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
